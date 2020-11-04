@@ -1,14 +1,14 @@
 describe("User can navigate the app", () => {
   beforeEach(() => {
-    cy.visit("https://localhost:3000");
+    cy.visit("http://localhost:3000");
   });
 
   it("to About tab", () => {
     cy.get("#about-tab").click();
 
-    cy.get("#about-header").should("contain", "About Me");
+    cy.get("#about-header").should("contain", "About");
 
-    cy.get("#projects-header"),should("not.exist");
+    cy.get("#projects-header").should("not.exist");
     cy.get("#hello").should("not.exist");
   });
 
@@ -18,7 +18,7 @@ describe("User can navigate the app", () => {
     cy.get("#projects-header").should("contain", "My Projects");
 
     cy.get("#about-header").should("not.exist");
-    cy.get("#hello").should("not exist");
+    cy.get("#hello").should("not.exist");
   });
 
   it("back to My Portfolio/Hello tab", () => {
