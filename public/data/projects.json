@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Address Book",
+    "image": "http://www.myiconfinder.com/uploads/iconsets/256-256-e0cf08075864de6a58b1f6f7717a9f03.png",
+    "description": "A digital address book!"
+  },
+  {
+    "id": 2,
+    "name": "Fizz Buzz",
+    "image": "https://www.101computing.net/wp/wp-content/uploads/fizz-buzz-icon.png",
+    "description": "Fizz Buzz game!"
+  },
+  {
+    "id": 3,
+    "name": "ATM",
+    "image": "https://play-lh.googleusercontent.com/qvzm-DNbDlS_bdbYU-9e4BiKDvECaCNCHzB0IGTcZHcVJDD63pPngYFmgtvIW2rGWxw=s180-rw",
+    "description": "Digital ATM machine!"
+  }
+]
