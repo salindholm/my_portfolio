@@ -9,12 +9,12 @@
     "id": 2,
     "name": "Fizz Buzz",
     "image": "https://www.101computing.net/wp/wp-content/uploads/fizz-buzz-icon.png",
-    "description": "Fizz Buzz game!"
+    "description": "A Fizz Buzz game!"
   },
   {
     "id": 3,
     "name": "ATM",
     "image": "https://play-lh.googleusercontent.com/qvzm-DNbDlS_bdbYU-9e4BiKDvECaCNCHzB0IGTcZHcVJDD63pPngYFmgtvIW2rGWxw=s180-rw",
-    "description": "Digital ATM machine!"
+    "description": "A Digital ATM machine!"
   }
 ]
