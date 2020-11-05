@@ -15,19 +15,28 @@ describe("User can navigate the app", () => {
   it("to My Projects tab", () => {
     cy.get("#projects-tab").click();
 
-    cy.get("#projects-header").should("contain", "My Projects");
+    cy.get("#projects-header").should("contain", "Projects");
+
+    cy.get("#about-header").should("not.exist");
+    cy.get("#hello").should("not.exist");
+  });
+
+  it("to Contact tab", () => {
+    cy.get("#contact-tab").click();
+
+    cy.get("#contact-header").should("contain", "Contact");
 
     cy.get("#about-header").should("not.exist");
     cy.get("#hello").should("not.exist");
   });
 
   it("back to My Portfolio/Hello tab", () => {
-    cy.get("#about-tab").click();
     cy.get("#header").click();
 
-    cy.get("#hello").should("contain", "Hello");
+    cy.get("#hello-header").should("contain", "Welcome to my portfolio!");
 
     cy.get("#projects-header").should("not.exist");
+    cy.get("#about-header").should("not.exist");
     cy.get("#about-header").should("not.exist");
   });
 });

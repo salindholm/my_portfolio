@@ -4,11 +4,9 @@ import { Container } from "semantic-ui-react";
 const Contact = () => {
   return (
     <Container>
-      <h1 id="contact-header">Contact</h1>
-      <h2>Contact details:</h2>
-      <p>
-      sannelindholm@hotmail.com
-      </p>
+      <h1 id="contact-header">Contact details</h1>
+      <p> Email: sannelindholm@hotmail.com</p>
+      <p> Phone: 07XXXXXX</p>
     </Container>
   );
 };
