@@ -10,6 +10,8 @@ describe("User can navigate the app", () => {
 
     cy.get("#projects-header").should("not.exist");
     cy.get("#hello").should("not.exist");
+    cy.get("#cv-header").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
   });
 
   it("to My Projects tab", () => {
@@ -19,6 +21,19 @@ describe("User can navigate the app", () => {
 
     cy.get("#about-header").should("not.exist");
     cy.get("#hello").should("not.exist");
+    cy.get("#cv-header").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
+  });
+
+  it("to My CV tab", () => {
+    cy.get("#cv-tab").click();
+
+    cy.get("#cv-header").should("contain", "CV");
+
+    cy.get("#about-header").should("not.exist");
+    cy.get("#hello").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
+    cy.get("#projects-header").should("not.exist");
   });
 
   it("to Contact tab", () => {
@@ -28,6 +43,8 @@ describe("User can navigate the app", () => {
 
     cy.get("#about-header").should("not.exist");
     cy.get("#hello").should("not.exist");
+    cy.get("#cv-header").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
   });
 
   it("back to My Portfolio/Hello tab", () => {
@@ -37,6 +54,7 @@ describe("User can navigate the app", () => {
 
     cy.get("#projects-header").should("not.exist");
     cy.get("#about-header").should("not.exist");
-    cy.get("#about-header").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
+    cy.get("#cv-header").should("not.exist");
   });
 });
