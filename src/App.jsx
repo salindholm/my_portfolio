@@ -5,7 +5,7 @@ import Footer from './Footer';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
-import Cv from './Cv';
+import Cv from './CvCard';
 import { Switch, Route } from 'react-router-dom';
 
 const App = () => {

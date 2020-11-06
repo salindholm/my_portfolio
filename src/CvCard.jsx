@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "semantic-ui-react";
 
-const Cv = () => {
+const CvCard = () => {
   return (
     <Container>
       <h1 id="cv-header">My CV:</h1>
@@ -10,4 +10,4 @@ const Cv = () => {
   );
 };
 
-export default Cv;
+export default CvCard;
