@@ -15,7 +15,7 @@ const Header = () => {
             activeStyle={{ frontWeight: "bold" }}
             to="/about"
           >
-            About Me
+            About
           </NavLink>
           <NavLink
             id="projects-tab"
@@ -31,7 +31,7 @@ const Header = () => {
             activateStyle={{ frontWeight: "bold" }}
             to="/cv"
           >
-            My CV
+            CV
           </NavLink>
           <NavLink
             id="contact-tab"
