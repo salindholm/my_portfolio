@@ -5,7 +5,7 @@ import Footer from './Footer';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
-import Cv from './CvCard';
+import CvComponent from './CvComponent';
 import { Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
           <Route exact path="/" component={Hello}></Route>
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/projects" component={Projects}></Route>
-          <Route exact path="/cv" component={Cv}></Route>
+          <Route exact path="/Cv" component={CvComponent}></Route>
           <Route exact path="/contact" component={Contact}></Route>
           <Hello />
         </Switch>

@@ -76,3 +76,7 @@ p {
 #link {
   color: #463646;
 }
+
+.grid > div {
+  margin-top: 2%;
+}
