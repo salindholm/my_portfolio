@@ -1,13 +1,15 @@
 [
 {
   "id": 1,
-  "name": "Experience",
-  "description": "A digital address book!"
+  "name": "Project Manager",
+  "image": "./images/addressbook.jpg",
+  "description": "Project Manager at Egencia Sweden AB coordinating group travels for companies."
 },
 
 {
   "id": 2,
-  "name": "Education",
-  "description": "A digital address book!"
+  "name": "Internationell Resekonsult ",
+  "image": "./images/addressbook.jpg",
+  "description": "IATA and UFTAA qualifications in the travel industry."
 }
 ]
