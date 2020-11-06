@@ -44,7 +44,7 @@ describe("User can navigate the app", () => {
     cy.get("#about-header").should("not.exist");
     cy.get("#hello").should("not.exist");
     cy.get("#cv-header").should("not.exist");
-    cy.get("#contact-header").should("not.exist");
+    cy.get("#projects-header").should("not.exist");
   });
 
   it("back to My Portfolio/Hello tab", () => {
