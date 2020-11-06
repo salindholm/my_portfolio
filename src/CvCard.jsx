@@ -1,12 +1,15 @@
 import React from "react";
-import { Container } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 
-const CvCard = () => {
+const CvCard = ({ experience }) => {
   return (
-    <Container>
-      <h1 id="cv-header">My CV:</h1>
-      <p> CV</p>
-    </Container>
+    <Card>
+      <Image src={experience.image} wrapped ui={false} />
+      <Card.Content>
+        <Card.Header>{experience.name}</Card.Header>
+        <Card.Description>{experience.description}</Card.Description>
+      </Card.Content>
+    </Card>
   );
 };
 
