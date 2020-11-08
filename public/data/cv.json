@@ -3,13 +3,15 @@
   "id": 1,
   "name": "Work Experience",
   "image": "./images/work.jpg",
-  "description": "Project Manager at Egencia Sweden AB coordinating group travels for companies."
+  "description": "Project Manager at Egencia Sweden AB coordinating group travels for companies.",
+  "linkedin": "https://www.linkedin.com/in/sanne-lindholm-1954381bb"
 },
 
 {
   "id": 2,
   "name": "Education",
   "image": "./images/education.jpg",
-  "description": "International Travel Consultant with IATA and UFTAA qualifications."
+  "description": "International Travel Consultant with IATA and UFTAA qualifications.",
+  "linkedin": "https://www.linkedin.com/in/sanne-lindholm-1954381bb"
 }
 ]
