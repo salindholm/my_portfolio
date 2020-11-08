@@ -1,14 +1,86 @@
-import React from "react";
-import { Container } from "semantic-ui-react";
+import React, { Component } from "react";
+import { Form } from "semantic-ui-react";
 
-const Contact = () => {
-  return (
-    <Container>
-      <h1 id="contact-header">Contact details</h1>
-      <p> Email: sannelindholm@hotmail.com</p>
-      <p> Phone: 07XXXXXX</p>
-    </Container>
-  );
+const encode = (data) => {
+  return Object.keys(data)
+  .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  .join("&");
 };
 
-export default Contact;
+class ContactForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+
+  handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form class="ui form" onSubmit={this.handleSubmit} netlify name="contact">
+        <input type="hidden" name="form-name" value="contact" />
+        <h1 id="contact-header">Contact form</h1>
+        <div class="field">
+          <label>
+            Your Name:
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={this.handleChange}
+            />
+          </label>
+        </div>
+        <div class="field">
+          <label>
+            Your Email:
+            <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+            />
+          </label>
+        </div>
+        <div class="field">
+          <label>
+            Message:
+            <textarea
+              name="message"
+              value={message}
+              onChange={this.handleChange}
+            />
+          </label>
+        </div>
+        <button class="ui button" type="submit">Send</button>
+      </form>
+    );
+  }
+}
+
+export default ContactForm;
+
+
+
+// const Contact = () => {
+//   return (
+//     <Container>
+//       <h1 id="contact-header">Contact details</h1>
+//       <p> Email: sannelindholm@hotmail.com</p>
+//       <p> Phone: 07XXXXXX</p>
+//     </Container>
+//   );
+// };

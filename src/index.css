@@ -45,7 +45,6 @@ html body {
   color: #463646;
   font-family: 'Arial';
   font-size: 30px;
-  padding-top: 70px;
 } 
 
 #hello-header {
@@ -74,10 +73,24 @@ p {
   
 }
 
-#link {
+.grid > div {
+  margin-top: 2%;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  margin-top: 5%;
+  text-align: center;
+  width: 400px;
+  margin: 70px auto;
   color: #463646;
 }
 
-.grid > div {
-  margin-top: 2%;
+.field {
+    box-sizing: border-box;
+    font-size: large;
+    color: #463646;
 }
