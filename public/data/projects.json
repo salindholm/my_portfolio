@@ -3,18 +3,21 @@
     "id": 1,
     "name": "Address Book",
     "image": "./images/addressbook.jpg",
-    "description": "A digital address book!"
+    "description": "A digital address book!",
+    "github": "https://github.com/salindholm/address_book_challenge.git"
   },
   {
     "id": 2,
     "name": "Fizz Buzz",
     "image": "./images/game.jpg",
-    "description": "A Fizz Buzz game!"
+    "description": "A Fizz Buzz game!",
+    "github": "https://github.com/salindholm/fizz_buzz.git"
   },
   {
     "id": 3,
     "name": "ATM",
     "image": "./images/atm.jpg",
-    "description": "A Digital ATM machine!"
+    "description": "A Digital ATM machine!",
+    "github": "https://github.com/salindholm/atm_challenge_2020.git"
   }
 ]
