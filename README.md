@@ -1,29 +1,25 @@
-## My Portfolio
+# My Portfolio
 This is a portfolio to showcase my work and some information about myself.
 
-## Built with
-**Front End:** React v.17.0.1 | CSS </br> 
-**Testing framework:** Cypress</br> 
-**Deployment link:** [Netlify](https://salindholm-portfolio.netlify.app/)</br> 
+## The Code
+[Deployed App(Netlify)](https://salindholm-portfolio.netlify.app/)
 
-## User Stories:
+## User Stories
 ```
 As a developer,
 In order to display my work and information about me,
 I want to be able to have a portfolio for it.
 ```
 
-### Dependencies  
-* react-dom
-* react-redux
-* react-router-dom
-* react-scripts
-* redux
-* semantic-ui-css
-* semantic-ui-react
+## Dependencies  
+- React
+- Cypress
+- Axios
+- React-router-dom
+- Semantic-ui-react/Semantic-ui-css
 
 ## Acknowledgements
-- [Craft Academy](https://craftacademy.se/) learning materials
-- [Craft Academy](https://craftacademy.se/) coaches
+- Course material from [Craft Academy](https://www.craftacademy.se/english/)
 
-## License under MIT license
+## License
+MIT License
