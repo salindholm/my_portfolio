@@ -1,14 +1,34 @@
-import React from "react";
-import { Container } from "semantic-ui-react";
+import React from 'react'
+import { Container, Image } from 'semantic-ui-react'
 
 const About = () => {
   return (
-    <Container>
-      <h1 id="about-header">About me</h1>
-      <p>I am a 26 year old girl from the Northern parts of Sweden who is passionate about traveling and exploring the world. I’ve up to this point been in 38 countries and after High School I went to live in Australia and England for a year each. Back in Sweden I started to work in the travel industry, but due to the current situation in the world with Covid-19, I lost my job and can not see a future there anymore.</p>
-      <p>So my focus switched to programming, that I’ve always been a bit interested in. I’m a really creative person who enjoys problem solving, therefor I think it might be a really good fit. So now I’ve entered a Full Stack Developer Boot Camp at Craftacademy which will help me start up my new career.</p>
-    </Container>
-  );
-};
+    <>
+        <h1 id='about-header'>About me</h1>
+      <Container>
+        <Image
+          src='/images/coder.gif'
+          size='medium'
+          circular
+          floated='left'
+        />
+        <Container className='about-content'>
+          <p>
+            I'm a 26 y/o girl from the Northern parts of Sweden who is
+            passionate about traveling and exploring the world.{' '}
+          </p>
+          <p>
+            Newly graduated from Craft Academy where I have been working in a
+            fast-paced environment, learning how to work in real-life projects
+            and situations. I got a solid knowledge of working with both
+            frontend and backend to build complete full-stack applications, all
+            based on the Agile methodology, Test-Driven Development process and
+            pair programming.{' '}
+          </p>
+        </Container>
+      </Container>
+    </>
+  )
+}
 
-export default About;
+export default About

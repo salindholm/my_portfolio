@@ -31,7 +31,7 @@ class ContactForm extends Component {
     return (
       <form class="ui form" onSubmit={this.handleSubmit} netlify name="contact">
         <input type="hidden" name="form-name" value="contact" />
-        <h1 id="contact-header">Contact form</h1>
+        <h1 id="contact-header">Contact me!</h1>
         <div class="field">
           <label>
             Your Name:

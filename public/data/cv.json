@@ -2,22 +2,22 @@
   {
     "id": 1,
     "name": "Work Experience",
-    "image": "./images/work.jpg",
+    "image": "./images/trip.png",
     "description": "Project Manager at Egencia coordinating group travels for companies.",
     "linkedin": "https://www.linkedin.com/in/sanne-lindholm-1954381bb"
   },
   {
     "id": 2,
     "name": "Education",
-    "image": "./images/education.jpg",
+    "image": "./images/diploma.png",
     "description": "International Travel Consultant with IATA and UFTAA qualifications.",
     "linkedin": "https://www.linkedin.com/in/sanne-lindholm-1954381bb"
   },
   {
     "id": 3,
     "name": "Education",
-    "image": "./images/education.jpg",
-    "description": "12 Week Full Stack Web Developer Boot Camp",
+    "image": "./images/computer-science.png",
+    "description": "12 Week Full Stack Web Developer Boot Camp.",
     "linkedin": "https://www.linkedin.com/in/sanne-lindholm-1954381bb"
   }
 ]

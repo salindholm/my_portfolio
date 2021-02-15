@@ -13,6 +13,9 @@ const ProjectCard = ({ project }) => {
             <a href={project.github}>
             <Icon name="github" id={`gitIcon-${project.id}`} />
           </a>
+          <a href={project.url}>
+              <Icon name="external alternate" id={`urlIcon-${project.id}`} />
+            </a>
         </Card.Content>
     </Card>
   );
