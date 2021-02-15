@@ -1,18 +1,16 @@
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #ffe4d9;
-  margin-top: 0;
-  margin-bottom: 0;
   text-align: center;
 }
 
 html body {
-  background-image: url("./Images/background.jpg");
+  background-image: url("../Images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,14 +29,14 @@ html body {
 #about-header{
   color: #463646;
   font-size: 30px;
-  padding-top: 70px;
+  padding-top: 50px;
+  padding-left: 55%;
 }
 
 #cv-header {
   color: #463646;
   font-size: 30px;
   padding-top: 70px;
-  
 }
 
 #contact-header {
@@ -63,10 +61,14 @@ html body {
   color: white;
 }
 
+.container-grid {
+  padding-bottom: 80px
+}
+
 p {
   color: #463646;
   font-size: 15px;
-  
+  padding-bottom: -1px;
 }
 
 .grid > div {
@@ -93,4 +95,8 @@ form {
 
 #hello-text {
     font-size: 20px;
+}
+
+.projectcards {
+  min-width: 400;
 }
