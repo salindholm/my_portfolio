@@ -4,41 +4,47 @@
     "name": "Kitty News",
     "image": "./images/newspaper.png",
     "description": "A digital newspaper filled with cats and kitties!",
-    "github": "https://github.com/salindholm/kitty_news_client_user"
+    "github": "https://github.com/salindholm/kitty_news_client_user",
+    "url": "https://kittynews.netlify.app/"
   },
   {
     "id": 2,
     "name": "TuneShare",
     "image": "./images/listening.png",
     "description": "A mobile application where the user can post their favorite music!",
-    "github": "https://github.com/salindholm/tuneshare_client"
+    "github": "https://github.com/salindholm/tuneshare_client",
+    "url": "https://github.com/salindholm/tuneshare_client"
   },
   {
     "id": 3,
     "name": "Trumpster",
     "image": "./images/hat.png",
     "description": "An application for making fun of the former president of the United States!",
-    "github": "https://github.com/salindholm/trumpster_client"
+    "github": "https://github.com/salindholm/trumpster_client",
+    "url": "https://trumpster-dumpster.netlify.app/"
   },
   {
     "id": 4,
     "name": "Rock Paper Scissors",
     "image": "./images/rock-paper-scissors.png",
     "description": "An application with a rock-paper-scissors game!",
-    "github": "https://github.com/salindholm/rock_paper_scissors_challange"
+    "github": "https://github.com/salindholm/rock_paper_scissors_challange",
+    "url": "https://salindholm-rps-challange.netlify.app/"
   },
   {
     "id": 5,
     "name": "SlowFood Revisarik",
     "image": "./images/pizza.png",
     "description": "A made-up online pizzeria where you can register and order your favorite pizza!",
-    "github": "https://github.com/salindholm/slowfood_client_team1_october2020"
+    "github": "https://github.com/salindholm/slowfood_client_team1_october2020",
+    "url": "https://revisarik.netlify.app/"
   },
   {
     "id": 6,
     "name": "Cooper Challange",
     "image": "./images/run.png",
     "description": "An application that allows users to calculate their cooper test results!",
-    "github": "https://github.com/salindholm/cooper_client"
+    "github": "https://github.com/salindholm/cooper_client",
+    "url": "https://whssl-cooper-challenge.netlify.app/"
   }
 ]
