@@ -1,23 +1,30 @@
 [
   {
     "id": 1,
-    "name": "Address Book",
-    "image": "./images/addressbook.jpg",
-    "description": "A digital address book!",
-    "github": "https://github.com/salindholm/address_book_challenge.git"
+    "name": "Kitty News",
+    "image": "./images/newspaper.png",
+    "description": "A digital newspaper filled with cats and kitties!",
+    "github": "https://github.com/salindholm/kitty_news_client_user"
   },
   {
     "id": 2,
-    "name": "Fizz Buzz",
-    "image": "./images/game.jpg",
-    "description": "A Fizz Buzz game!",
-    "github": "https://github.com/salindholm/fizz_buzz.git"
+    "name": "TuneShare",
+    "image": "./images/listening.png",
+    "description": "A mobile application where the user can post their favorite music!",
+    "github": "https://github.com/salindholm/tuneshare_client"
   },
   {
     "id": 3,
-    "name": "ATM",
-    "image": "./images/atm.jpg",
-    "description": "A Digital ATM machine!",
-    "github": "https://github.com/salindholm/atm_challenge_2020.git"
+    "name": "Trumpster",
+    "image": "./images/hat.png",
+    "description": "An application for making fun of the former president of the United States!",
+    "github": "https://github.com/salindholm/trumpster_client"
+  },
+  {
+    "id": 4,
+    "name": "Rock Paper Scissors",
+    "image": "./images/rock-paper-scissors.png",
+    "description": "An application with a rock-paper-scissors game!",
+    "github": "https://github.com/salindholm/trumpster_client"
   }
 ]

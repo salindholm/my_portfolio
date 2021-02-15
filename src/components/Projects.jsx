@@ -28,7 +28,7 @@ class Projects extends Component {
     return (
       <Container>
         <h1 id="projects-header">My Projects</h1>
-        <Grid centered columns={3}>{projectsList}</Grid>
+        <Grid centered columns={4}>{projectsList}</Grid>
       </Container>
     );
   }
