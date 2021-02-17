@@ -13,18 +13,8 @@ const About = () => {
           floated='left'
         />
         <Container className='about-content'>
-          <p>
-            I'm a 26 y/o girl from the Northern parts of Sweden who is
-            passionate about traveling and exploring the world.{' '}
-          </p>
-          <p>
-            Newly graduated from Craft Academy where I have been working in a
-            fast-paced environment, learning how to work in real-life projects
-            and situations. I got a solid knowledge of working with both
-            frontend and backend to build complete full-stack applications, all
-            based on the Agile methodology, Test-Driven Development process and
-            pair programming.{' '}
-          </p>
+        <p>I'm a 26 y/o girl from the Northern parts of Sweden who is passionate about traveling and exploring the world. I’ve up to this point been in 38 countries and after High School I went to live in Australia and England for a year each. Back in Sweden I started to work in the travel industry, but due to Covid-19 I lost my job.</p>
+      <p>So my focus switched to programming. I’m a really creative person who enjoys problem solving, therefor I think it's a really good match. I’ve just finished a 12 week Full Stack Web Developer Boot Camp and I'm very exited to start my journey in this new industry.</p>
         </Container>
       </Container>
     </>

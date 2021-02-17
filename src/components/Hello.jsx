@@ -6,11 +6,11 @@ const Hello = () => {
     <Container>
       <h1 id='hello-header'>Hello!</h1>
       <p id='hello-text'>
-        My name is Sanne Lindholm, a fullstack developer based in Stockholm.
+        My name is Sanne Lindholm, a junior full stack developer based in Stockholm.
         <br />
-        This is a portfolio to showcase my work and some info about me.
+        This is my portfolio to showcase previous projects and some info about who I am.
         <br />
-        Enjoy!
+       If you want to contact me use the links below!
       </p>
       <div id='buttons'>
         <a href='https://www.linkedin.com/in/sanne-lindholm/'>
