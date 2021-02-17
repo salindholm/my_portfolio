@@ -47,7 +47,7 @@ html body {
 #hello-header {
   color: #463646;
   font-size: 40px;
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -99,4 +99,10 @@ form {
 
 .projectcards {
   min-width: 400;
+}
+
+#buttons {
+  color: #463646;
+  font-size: 40px;
+  text-align: center;
 }
