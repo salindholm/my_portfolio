@@ -29,10 +29,18 @@ const Hello = () => {
             <Button.Content visible>Github</Button.Content>
           </Button>
         </a>
+        <a href='../../public/data/cv.pdf'>
+          <Button animated='vertical' basic color='grey'>
+            <Button.Content hidden>
+              <Icon name='file code' />
+            </Button.Content>
+            <Button.Content visible>Resume</Button.Content>
+          </Button>
+        </a>
         <a href='mailto:sannelindholm@hotmail.com'>
           <Button animated='vertical' basic color='grey'>
             <Button.Content hidden>
-              <Icon name='mail' />
+              <Icon name='paper plane outline' />
             </Button.Content>
             <Button.Content visible>Email me</Button.Content>
           </Button>

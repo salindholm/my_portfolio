@@ -25,16 +25,6 @@ const Header = () => {
           >
             Projects
           </NavLink>
-          <a
-            href='../data/cv.pdf'
-            target='_blank'
-            rel='noreferrer noopener'
-            id='cv-tab'
-            className='ui item'
-            activateStyle={{ frontWeight: 'bold' }}
-          >
-            CV
-          </a>
         </div>
       </div>
     </nav>

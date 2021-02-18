@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Projects from './components/Projects';
-import CvComponent from './components/CvComponent';
 import { Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
           <Route exact path="/" component={Hello}></Route>
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/projects" component={Projects}></Route>
-          <Route exact path="/Cv" component={CvComponent}></Route>
           <Hello />
         </Switch>
         <Footer />
