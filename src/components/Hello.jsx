@@ -29,7 +29,7 @@ const Hello = () => {
             <Button.Content visible>Github</Button.Content>
           </Button>
         </a>
-        <a href='../data/cv.pdf' target='_blank' rel='noreferrer noopener'>
+        <a href='../data/Resume.pdf' target='_blank' rel='noreferrer noopener'>
           <Button animated='vertical' basic color='grey'>
             <Button.Content hidden>
               <Icon name='file code' />
