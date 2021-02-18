@@ -11,8 +11,6 @@ const Hello = () => {
         <br />
         This is my portfolio to showcase previous projects and some info about
         who I am.
-        <br />
-        If you want to contact me use the links below!
       </p>
       <div id='buttons'>
         <a href='https://www.linkedin.com/in/sanne-lindholm/'>
