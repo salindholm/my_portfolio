@@ -6,11 +6,13 @@ const Hello = () => {
     <Container>
       <h1 id='hello-header'>Hello!</h1>
       <p id='hello-text'>
-        My name is Sanne Lindholm, a junior full stack developer based in Stockholm.
+        My name is Sanne Lindholm, a junior full stack developer based in
+        Stockholm.
         <br />
-        This is my portfolio to showcase previous projects and some info about who I am.
+        This is my portfolio to showcase previous projects and some info about
+        who I am.
         <br />
-       If you want to contact me use the links below!
+        If you want to contact me use the links below!
       </p>
       <div id='buttons'>
         <a href='https://www.linkedin.com/in/sanne-lindholm/'>
@@ -29,7 +31,7 @@ const Hello = () => {
             <Button.Content visible>Github</Button.Content>
           </Button>
         </a>
-        <a href='../../public/data/cv.pdf'>
+        <a href='../data/cv.pdf' target='_blank' rel='noreferrer noopener'>
           <Button animated='vertical' basic color='grey'>
             <Button.Content hidden>
               <Icon name='file code' />
