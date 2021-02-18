@@ -6,7 +6,7 @@ const Hello = () => {
     <Container>
       <h1 id='hello-header'>Hello!</h1>
       <p id='hello-text'>
-        My name is Sanne Lindholm, a junior full stack developer based in
+        My name is Sanne Lindholm, a junior full stack web developer based in
         Stockholm.
         <br />
         This is my portfolio to showcase previous projects and some info about
@@ -26,7 +26,7 @@ const Hello = () => {
             <Button.Content hidden>
               <Icon name='github' />
             </Button.Content>
-            <Button.Content visible>Github</Button.Content>
+            <Button.Content visible>GitHub</Button.Content>
           </Button>
         </a>
         <a href='../data/Resume.pdf' target='_blank' rel='noreferrer noopener'>
@@ -42,7 +42,7 @@ const Hello = () => {
             <Button.Content hidden>
               <Icon name='paper plane outline' />
             </Button.Content>
-            <Button.Content visible>Email me</Button.Content>
+            <Button.Content visible>Email Me</Button.Content>
           </Button>
         </a>
       </div>
