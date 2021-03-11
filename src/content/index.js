@@ -29,19 +29,19 @@ export default {
     title: 'Stack',
     tech: [
       {
-        img: process.env.PUBLIC_URL + '/public/images/js.svg',
+        img: process.env.PUBLIC_URL + '/public/images/js.png',
         alt: 'javascript',
       },
       {
-        img: process.env.PUBLIC_URL + '/public/images/ruby.svg',
+        img: process.env.PUBLIC_URL + '/public/images/ruby.png',
         alt: 'ruby',
       },
       {
-        img: process.env.PUBLIC_URL + '/public/images/react.svg',
+        img: process.env.PUBLIC_URL + '/public/images/react.png',
         alt: 'react',
       },
       {
-        img: process.env.PUBLIC_URL + '/public/images/redux.svg',
+        img: process.env.PUBLIC_URL + '/public/images/redux.png',
         alt: 'redux',
       },
     ],
