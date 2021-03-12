@@ -16,7 +16,7 @@ export default function Contact() {
           minHeight: '50vh',
           background: 'black',
         }}
-        className="w-full md:w-4/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
+        className="w-full md:w-3/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
       >
         <LazyLoadImage
           effect="blur"
@@ -24,9 +24,9 @@ export default function Contact() {
           placeholderSrc={content.contact.imgPlaceholder}
           alt="profile"
           width="300px"
-          className="mt-10 transition duration-2000 ease-in-out mx-auto"
+          className=" transition duration-2000 ease-in-out mx-auto"
         />
-        <div className="font-dosis w-4/5 md:w-2/5 mt-5 transition duration-2000">
+        <div className="font-dosis w-4/5 md:w-2/5 transition duration-2000">
           <h1
             className={`${
               animated ? '' : 'translate-y-10 opacity-1'
@@ -51,7 +51,7 @@ export default function Contact() {
                 <LazyLoadImage
                   effect="blur"
                   className="m-2"
-                  width="50px"
+                  width="60px"
                   key={index}
                   src={social.img}
                   alt={social.alt}
