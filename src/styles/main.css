@@ -19211,6 +19211,40 @@ video {
   }
 }
 
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+
+  50%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+
+  100%{
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes refloat{
+  0%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+
+  50%{
+    transform: translateY(20px);
+    animation-timing-function: ease-in-out;
+  }
+
+  100%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
 @keyframes bounceFirst{
   0%{
     transform: translateY(-20px);
@@ -19246,6 +19280,14 @@ video {
 
 .animate-bounce{
   animation: bounce 4s infinite;
+}
+
+.animate-float{
+  animation: float 3s infinite;
+}
+
+.animate-refloat{
+  animation: refloat 3s infinite;
 }
 
 .animate-bounceFirst{
@@ -37867,6 +37909,14 @@ video {
 
   .sm\:animate-bounce{
     animation: bounce 4s infinite;
+  }
+
+  .sm\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .sm\:animate-refloat{
+    animation: refloat 3s infinite;
   }
 
   .sm\:animate-bounceFirst{
@@ -56491,6 +56541,14 @@ video {
     animation: bounce 4s infinite;
   }
 
+  .md\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .md\:animate-refloat{
+    animation: refloat 3s infinite;
+  }
+
   .md\:animate-bounceFirst{
     animation: bounceFirst 4s infinite;
   }
@@ -75113,6 +75171,14 @@ video {
     animation: bounce 4s infinite;
   }
 
+  .lg\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .lg\:animate-refloat{
+    animation: refloat 3s infinite;
+  }
+
   .lg\:animate-bounceFirst{
     animation: bounceFirst 4s infinite;
   }
@@ -93733,6 +93799,14 @@ video {
 
   .xl\:animate-bounce{
     animation: bounce 4s infinite;
+  }
+
+  .xl\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .xl\:animate-refloat{
+    animation: refloat 3s infinite;
   }
 
   .xl\:animate-bounceFirst{
