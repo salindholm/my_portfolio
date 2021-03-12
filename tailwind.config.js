@@ -9,6 +9,11 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      colors: {
+        'regal-orange': '#f99f3e'
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',

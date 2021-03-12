@@ -1,9 +1,12 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content from '../content';
 
-const Contact = () => {
+import content from '../content';
+import useWindowPosition from '../hooks/useWindowPosition';
+
+export default function Contact() {
+  const animated = useWindowPosition('header', 0.6, 4);
   return (
     <div
       className=" min-h-screen  flex justify-center items-center  "
@@ -22,9 +25,9 @@ const Contact = () => {
           placeholderSrc={content.contact.imgPlaceholder}
           alt="profile"
           width="300px"
-          className="mt-10 transtion duration-2000 ease-in-out mx-auto"
+          className="mt-10 transition duration-2000 ease-in-out mx-auto"
         />
-        {/* <div className="font-dosis w-4/5 md:w-2/5 mt-5 transtion duration-2000">
+        <div className="font-dosis w-4/5 md:w-2/5 mt-5 transition duration-2000">
           <h1
             className={`${
               animated ? '' : 'translate-y-10 opacity-0'
@@ -43,7 +46,7 @@ const Contact = () => {
             className={`flex ${
               animated ? '' : 'translate-y-10 opacity-0'
             } transform transition duration-3000 `}
-          > */}
+          >
             {content.contact.socials.map((social, index) => {
               return (
                 <LazyLoadImage
@@ -58,8 +61,7 @@ const Contact = () => {
             })}
           </div>
         </div>
-    //   </div>
-    // </div>
+      </div>
+    </div>
   );
 }
-export default Contact

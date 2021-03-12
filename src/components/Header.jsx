@@ -19,7 +19,7 @@ import content from '../content';
       }}
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full md:w-2/5">
+        <div className="w-full md:w-3/5">
           <LazyLoadImage
             src={content.header.img}
             effect="blur"
@@ -49,7 +49,7 @@ import content from '../content';
             />
           </h1>
           <ScrollLink to="stack" smooth={true}>
-            <button className=" animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
+            <button className=" animate-float bg-regal-orange px-10 py-3 text-xl uppercase mt-10 rounded-lg">
               {content.header.btnText}
             </button>
           </ScrollLink>
