@@ -55,6 +55,7 @@ export default function Contact() {
                   key={index}
                   src={social.img}
                   alt={social.alt}
+                  to={social.href}
                 />
               );
             })}
