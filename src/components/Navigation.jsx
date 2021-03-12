@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div
       style={{
-        background: '#091c29',
+        background: 'black',
       }}
     >
       <div className='flex items-center justify-between w-10/12 mx-auto py-3 text-white font-dosis'>

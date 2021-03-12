@@ -16,7 +16,7 @@ export default function Header() {
     <div
       className="min-h-screen flex items-center justify-center"
       style={{
-        background: '#091c29',
+        background: 'black',
       }}
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
