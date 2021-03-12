@@ -1,55 +1,65 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link as ScrollLink } from 'react-scroll';
 import Typical from 'react-typical';
 import content from '../content';
+import useStartAnimation from '../hooks/useStartAnimation';
 
  const Header = () => {
-  const [animated, setAnimated] = useState(false);
-  useEffect(() => {
-    setAnimated(true);
-  }, []);
-
+  const transition = (duration) =>
+    `transition duration-${duration} ease-in-out`;
+  const styleTranslate = 'translate-y-10 opacity-0';
+  const animated = useStartAnimation();
   return (
     <div
-      className="min-h-screen flex items-center justify-center"
       style={{
         background: 'black',
       }}
+      className="min-h-screen flex items-center justify-center"
+      id="header"
     >
-      <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full md:w-3/5">
+      <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
+        <div className="w-full md:w-2/5 ">
           <LazyLoadImage
             src={content.header.img}
+            alt="profile"
+            className={`w-full mx-auto`}
             effect="blur"
-            placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}
+            placeholderSrc={content.header.imgPlaceholder}
           />
         </div>
-        <div className="text-white font-dosis text-center md:text-left">
+
+        <div className="font-dosis w-full md:w-3/5 text-center md:text-left ">
           <h2
-            className={`${
-              animated ? '' : 'translate-y-10 opacity-0'
-            }  transform transition duration-2000 ease-in-out text-3xl md:text-5xl font-bold`}
+            className={`text-3xl md:text-4xl lg:text-6xl text-white font-bold transform ${
+              animated ? 'translate-y-0' : styleTranslate
+            }  ${transition(2000)} `}
           >
             {content.header.text[0]}
             <br />
             {content.header.text[1]}
           </h2>
           <h1
-            className={`${
-              animated ? '' : 'translate-y-10 opacity-0'
-            }  transform transition duration-2000 ease-in-out font-bold text-2xl text-gray-500`}
+            className={`text-2xl md:text-4xl text-gray-400 transform ${
+              animated ? 'translate-y-0' : styleTranslate
+            } ${transition(3000)} `}
           >
-            {content.header.text[2]}{' '}
+            {content.header.text[2]}
             <Typical
               steps={content.header.typical}
               loop={Infinity}
               className="inline-block"
+              wrapper="p"
             />
           </h1>
-          <ScrollLink to="stack" smooth={true}>
-            <button className=" animate-float bg-regal-orange px-10 py-3 text-xl uppercase mt-10 rounded-lg">
+
+          <ScrollLink to="mywork" smooth={true}>
+            <button
+              className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-indigo-300 transform  ${
+                animated ? 'translate-y-0' : styleTranslate
+              } ${transition(3500)}`}
+            >
               {content.header.btnText}
             </button>
           </ScrollLink>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
 import content from '../content';
 import useWindowPosition from '../hooks/useWindowPosition';
 
@@ -15,7 +14,7 @@ export default function Contact() {
       <div
         style={{
           minHeight: '50vh',
-          background: '#091C29',
+          background: 'black',
         }}
         className="w-full md:w-4/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
       >
@@ -30,21 +29,21 @@ export default function Contact() {
         <div className="font-dosis w-4/5 md:w-2/5 mt-5 transition duration-2000">
           <h1
             className={`${
-              animated ? '' : 'translate-y-10 opacity-0'
+              animated ? '' : 'translate-y-10 opacity-1'
             } transform transition duration-3000 text-white text-5xl font-bold`}
           >
             {content.contact.title}
           </h1>
           <p
             className={`${
-              animated ? '' : 'translate-y-10 opacity-0'
+              animated ? '' : 'translate-y-10 opacity-1'
             } transform transition duration-3000 text-white text-2xl`}
           >
             {content.contact.desc}
           </p>
           <div
             className={`flex ${
-              animated ? '' : 'translate-y-10 opacity-0'
+              animated ? '' : 'translate-y-10 opacity-1'
             } transform transition duration-3000 `}
           >
             {content.contact.socials.map((social, index) => {
