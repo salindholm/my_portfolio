@@ -44,8 +44,8 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^5.5.0",
     "autoprefixer": "^9.8.6",
+    "cypress": "^5.5.0",
     "postcss-cli": "^8.1.0",
     "tailwindcss": "^1.9.3"
   }
