@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import content from '../content';
 
-export default function Stack() {
+const Stack = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center flex-col"
@@ -32,3 +32,4 @@ export default function Stack() {
     </div>
   );
 }
+export default Stack

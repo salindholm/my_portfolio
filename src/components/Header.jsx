@@ -3,10 +3,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link as ScrollLink } from 'react-scroll';
 import Typical from 'react-typical';
-
 import content from '../content';
 
-export default function Header() {
+ const Header = () => {
   const [animated, setAnimated] = useState(false);
   useEffect(() => {
     setAnimated(true);
@@ -59,3 +58,4 @@ export default function Header() {
     </div>
   );
 }
+export default Header
