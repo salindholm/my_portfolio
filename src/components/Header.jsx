@@ -56,7 +56,7 @@ import useStartAnimation from '../hooks/useStartAnimation';
 
           <ScrollLink to="mywork" smooth={true}>
             <button
-              className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-indigo-300 transform  ${
+              className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                 animated ? 'translate-y-0' : styleTranslate
               } ${transition(3500)}`}
             >

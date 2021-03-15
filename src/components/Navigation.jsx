@@ -21,7 +21,7 @@ const Navigation = () => {
             <span className='w-3 h-3 bg-regal-orange inline-block rounded-full'></span>
           </h1>
         </ScrollLink>
-        <div>
+        <div className='text-2xl'>
           {content.nav.links.map((link, index) => {
             return (
               <ScrollLink to={link.to} smooth={true}>

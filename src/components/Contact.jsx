@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import content from '../content';
 import useWindowPosition from '../hooks/useWindowPosition';
+import { Image } from "semantic-ui-react";
 
 export default function Contact() {
   const animated = useWindowPosition('header', 0.6, 4);
@@ -48,14 +49,15 @@ export default function Contact() {
           >
             {content.contact.socials.map((social, index) => {
               return (
-                <LazyLoadImage
+                <Image
                   effect="blur"
                   className="m-2"
                   width="60px"
                   key={index}
                   src={social.img}
                   alt={social.alt}
-                  to={social.href}
+                  href={social.href}
+                  target='_blank'
                 />
               );
             })}

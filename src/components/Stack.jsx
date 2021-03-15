@@ -10,6 +10,7 @@ const Stack = () => {
       style={{
         background: '#eee',
       }}
+      id="mystack"
     >
       <h1 className="text-5xl font-dosis font-bold mb-10">Stack I Use</h1>
       <div>
