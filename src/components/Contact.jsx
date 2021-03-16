@@ -9,7 +9,7 @@ export default function Contact() {
   const animated = useWindowPosition('header', 0.6, 4);
   return (
     <div
-      className=" min-h-screen  flex justify-center items-center  "
+      className=" min-h-screen flex justify-center items-center  "
       id="mycontact"
     >
       <div

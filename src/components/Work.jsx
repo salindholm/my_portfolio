@@ -1,80 +1,295 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content from '../content';
-import useWindowPosition from '../hooks/useWindowPosition';
+import useStartAnimation from '../hooks/useStartAnimation';
 
-export default function Work() {
-  const animated = useWindowPosition('header', 0.6);
+export default function Contact() {
+  const transition = (duration) =>
+    `transition duration-${duration} ease-in-out`;
+  const styleTranslate = 'translate-y-10 opacity-0';
+  const animated = useStartAnimation();
   return (
-    <div
-      className="min-h-screen flex justify-center items-center flex-col"
-      style={{
-        background: '#FEFEFE',
-      }}
-      id="mywork"
-    >
-      <h1 className="text-5xl font-dosis font-bold">{content.work.title}</h1>
-      <p className="text-gray-600 text-2xl font-dosis mb-10">I have done</p>
-      <div className="flex flex-col md:flex-row justify-between items-center w-11/12 ">
-        <LazyLoadImage
-          effect="blur"
-          placeholderSrc={content.work.imgPlaceholder}
-          src={content.work.img}
-          alt="phone prototype"
-          className="m-10 transtion duration-2000 ease-in-out z-10  md:w-3/5 w-4/5"
-        />
-        <div
-          className="transtion duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block"
-          style={{
-            border: '1px solid #e5ecf9',
-            transform: animated
-              ? 'translate(-10%, 0%) rotate3d(0.540, -0.95, 0, 22deg) rotateZ(7deg)'
-              : '',
-            boxShadow:
-              '35px 50px 90px -25px rgba(50, 50, 95, 0.5), 20px 35px 75px -35px rgba(0, 0, 0, 0.5)',
-          }}
-        >
-          <ProjectDetail />
-        </div>
-        <div className="flex justify-center items-center md:hidden">
-          <ProjectDetail />
-        </div>
+    <div>
+      <h1
+        className=' text-5xl font-dosis font-bold flex justify-center'
+        id='mywork'
+      >
+        Projects
+      </h1>
+      <p className='text-gray-600 text-2xl font-dosis flex justify-center'>
+        I have done
+      </p>
+      <div className=' mt-5 ml-3 mr-3 flex justify-center items-center'>
+        <ul className='grid grid-cols-3 gap-4'>
+          <div
+            style={{
+              minHeight: '50vh',
+              background: 'black',
+            }}
+            className='w-5/5 md:w-5/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center'
+          >
+            <div className='font-dosis w-5/5 md:w-4/5 transition duration-2000'>
+              <h1
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-4xl font-bold`}
+              >
+                TuneShare
+              </h1>
+              <p
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-1xl`}
+              >
+                A mobile application built with React Native where the user can
+                post their favorite music and share their thoughts. The backend
+                server is using the Spotify API to provide users with music data
+                to post.
+              </p>
+              <a href='https://github.com/salindholm/tuneshare_client'>
+                <button
+                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Github
+                </button>
+              </a>{' '}
+              <a href='https://github.com/salindholm/tuneshare_client'>
+                <button
+                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Website
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              minHeight: '50vh',
+              background: 'black',
+            }}
+            className='w-5/5 md:w-5/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center'
+          >
+            <div className='font-dosis w-5/5 md:w-4/5 transition duration-2000'>
+              <h1
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-4xl font-bold`}
+              >
+                Kitty News
+              </h1>
+              <p
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-1xl`}
+              >
+                A web application of a digital news paper. Visitors can sign up
+                and pay a subscription fee to get full access to all articles.
+                Also built a mobile app that has fewer functions and an admin
+                client for the news paper staff.
+              </p>
+              <a href='https://github.com/salindholm/kitty_news_client_user'>
+                <button
+                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Github
+                </button>
+              </a>{' '}
+              <a href='https://kittynews.netlify.app/'>
+                <button
+                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Website
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              minHeight: '50vh',
+              background: 'black',
+            }}
+            className='w-5/5 md:w-5/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center'
+          >
+            <div className='font-dosis w-4/5 md:w-4/5 transition duration-2000'>
+              <h1
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-4xl font-bold`}
+              >
+                Trumpster
+              </h1>
+              <p
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-1xl`}
+              >
+                A web application created for the sole purpose of making fun of
+                the former president of the United States. Users can view a
+                random quote, search for quotes and customize their own insult
+                using quotes.
+              </p>
+              <a href='https://github.com/salindholm/trumpster_client'>
+                <button
+                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Github
+                </button>
+              </a>{' '}
+              <a href='https://trumpster-dumpster.netlify.app/'>
+                <button
+                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Website
+                </button>
+              </a>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div className=' mt-5 ml-3 mr-3 flex justify-center items-center'>
+        <ul className='grid grid-cols-3 gap-4'>
+          <div
+            style={{
+              minHeight: '50vh',
+              background: 'black',
+            }}
+            className='w-5/5 md:w-5/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center'
+          >
+            <div className='font-dosis w-5/5 md:w-4/5 transition duration-2000'>
+              <h1
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-4xl font-bold`}
+              >
+                Slowfood
+              </h1>
+              <p
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-1xl`}
+              >
+                A web application for ordering food online. Registered users can
+                add products to their order and check out the current order.
+              </p>
+              <a href='https://github.com/salindholm/slowfood_client_team1_october2020'>
+                <button
+                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Github
+                </button>
+              </a>{' '}
+              <a href='https://revisarik.netlify.app/'>
+                <button
+                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Website
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              minHeight: '50vh',
+              background: 'black',
+            }}
+            className='w-5/5 md:w-5/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center'
+          >
+            <div className='font-dosis w-5/5 md:w-4/5 transition duration-2000'>
+              <h1
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-4xl font-bold`}
+              >
+                Rock Paper Scissors
+              </h1>
+              <p
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-1xl`}
+              >
+                A web application of the popular game Rock Paper Scissors which
+                could be played between the user and the computer.
+              </p>
+              <a href='https://github.com/salindholm/rock_paper_scissors_challange'>
+                <button
+                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Github
+                </button>
+              </a>{' '}
+              <a href='https://salindholm-rps-challange.netlify.app/'>
+                <button
+                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Website
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              minHeight: '50vh',
+              background: 'black',
+            }}
+            className='w-5/5 md:w-5/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center'
+          >
+            <div className='font-dosis w-4/5 md:w-4/5 transition duration-2000'>
+              <h1
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-4xl font-bold`}
+              >
+                Cooper Challange
+              </h1>
+              <p
+                className={`${
+                  animated ? '' : 'translate-y-10 opacity-1'
+                } transform transition duration-3000 text-white text-1xl`}
+              >
+                A web application that allows users to calculate their cooper
+                test result, save it and view their past test results.
+              </p>
+              <a href='https://github.com/salindholm/cooper_client'>
+                <button
+                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Github
+                </button>
+              </a>{' '}
+              <a href='https://whssl-cooper-challenge.netlify.app/'>
+                <button
+                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                    animated ? 'translate-y-0' : styleTranslate
+                  } ${transition(3500)}`}
+                >
+                  Website
+                </button>
+              </a>
+            </div>
+          </div>
+        </ul>
       </div>
     </div>
   );
 }
-
-const ProjectDetail = () => {
-  const animated = useWindowPosition('header', 0.6);
-  return (
-    <div>
-      <h1
-        className={` ${
-          animated ? '' : 'translate-y-10 opacity-0'
-        }   transform transition duration-2000 inline-block m-4  font-dosis text-xl font-bold`}
-      >
-        {content.work.projectName}
-      </h1>
-      <p
-        className={`${
-          animated ? '' : 'translate-y-10 opacity-0'
-        }  transform transition duration-2000 inline-block w-11/12 m-4  text-xl font-dosis`}
-      >
-        {content.work.desc}
-      </p>
-      <button
-        className={`${
-          animated ? '' : 'translate-y-10 opacity-0'
-        } transform transition duration-2000  px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
-      >
-        <img
-          src="https://timo.engineer/assets/icons/rocket.svg"
-          alt="rocket"
-          className="mr-5"
-        />
-        <p className="text-lg">Website</p>
-      </button>
-    </div>
-  );
-};
