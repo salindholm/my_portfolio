@@ -2,9 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <p id="footer">Made with React {React.version}</p>
-    </footer>
+    <div style={{
+      background: 'black',
+    }}
+    className='mx-auto py-3 font-dosis flex items-center justify-center flex-col'>
+      <div className='text-2xl text-white '>Copyright © 2021 Sanne Lindholm</div>
+    </div>
   );
 };
 

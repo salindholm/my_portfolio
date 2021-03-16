@@ -45,7 +45,7 @@ const content = {
         alt: 'semantic',
       },
     ],
-    desc: `Newly graduated from Craft Academy where I have been working in a fast-paced environment, learning how to work in real-life projects and situations. I got a solid knowledge of working with both front end and back end to build complete full stack applications, all based on the Agile methodology, Test-Driven Development process and pair programming.`,
+    desc: `Newly graduated from Craft Academy where I have been working in a fast-paced environment, learning how to work in real-life projects and situations. I got a solid knowledge of working with both front end and back end to build complete full stack applications, all based on the Agile methodology, Test-Driven Development process and pair programming`,
   },
   contact: {
     title: 'My links!',
