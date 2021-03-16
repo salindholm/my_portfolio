@@ -8,7 +8,7 @@ const Navigation = () => {
       style={{
         background: 'black',
       }}
-      className="font-dosis fixed top-0 w-screen z-40"
+      className='font-dosis fixed top-0 w-screen z-40'
     >
       <div className='flex items-center justify-between w-10/12 mx-auto py-3 text-white font-dosis'>
         <ScrollLink

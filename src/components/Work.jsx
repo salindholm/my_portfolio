@@ -2,7 +2,7 @@ import React from 'react';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import useStartAnimation from '../hooks/useStartAnimation';
 
-export default function Contact() {
+const Work = () => {
   const transition = (duration) =>
     `transition duration-${duration} ease-in-out`;
   const styleTranslate = 'translate-y-10 opacity-0';
@@ -292,4 +292,5 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+};
+export default Work;

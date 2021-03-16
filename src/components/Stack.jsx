@@ -86,9 +86,7 @@ const Stack = () => {
           effect='blur'
           className='m-2'
           width='60px'
-          src={
-            'https://icon-library.com/images/nodejs-icon/nodejs-icon-1.jpg'
-          }
+          src={'https://icon-library.com/images/nodejs-icon/nodejs-icon-1.jpg'}
           alt={'nodejs'}
         />
         <Image
@@ -125,7 +123,9 @@ const Stack = () => {
           effect='blur'
           className='m-2'
           width='60px'
-          src={'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/jest-512.png'}
+          src={
+            'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/jest-512.png'
+          }
           alt={'rspec'}
         />
         <Image
