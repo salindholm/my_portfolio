@@ -41,15 +41,8 @@ const Stack = () => {
           effect='blur'
           className='m-2'
           width='60px'
-          src={'/images/jsbw.png'}
-          alt={'js'}
-        />
-        <Image
-          effect='blur'
-          className='m-2'
-          width='60px'
-          src={'/images/rubybw.png'}
-          alt={'ruby'}
+          src={'/images/html5bw.png'}
+          alt={'html5'}
         />
         <Image
           effect='blur'
@@ -62,8 +55,15 @@ const Stack = () => {
           effect='blur'
           className='m-2'
           width='60px'
-          src={'/images/html5bw.png'}
-          alt={'html5'}
+          src={'/images/jsbw.png'}
+          alt={'js'}
+        />
+        <Image
+          effect='blur'
+          className='m-2'
+          width='60px'
+          src={'/images/rubybw.png'}
+          alt={'ruby'}
         />
         <Image
           effect='blur'
