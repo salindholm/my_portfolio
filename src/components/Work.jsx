@@ -47,7 +47,7 @@ const Work = () => {
               </p>
               <a href='https://github.com/salindholm/tuneshare_client'>
                 <button
-                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -56,7 +56,7 @@ const Work = () => {
               </a>{' '}
               <a href='https://github.com/salindholm/tuneshare_client'>
                 <button
-                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -92,7 +92,7 @@ const Work = () => {
               </p>
               <a href='https://github.com/salindholm/kitty_news_client_user'>
                 <button
-                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -101,7 +101,7 @@ const Work = () => {
               </a>{' '}
               <a href='https://kittynews.netlify.app/'>
                 <button
-                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -137,7 +137,7 @@ const Work = () => {
               </p>
               <a href='https://github.com/salindholm/trumpster_client'>
                 <button
-                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -146,7 +146,7 @@ const Work = () => {
               </a>{' '}
               <a href='https://trumpster-dumpster.netlify.app/'>
                 <button
-                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -184,7 +184,7 @@ const Work = () => {
               </p>
               <a href='https://github.com/salindholm/slowfood_client_team1_october2020'>
                 <button
-                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -193,7 +193,7 @@ const Work = () => {
               </a>{' '}
               <a href='https://revisarik.netlify.app/'>
                 <button
-                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -227,7 +227,7 @@ const Work = () => {
               </p>
               <a href='https://github.com/salindholm/rock_paper_scissors_challange'>
                 <button
-                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -236,7 +236,7 @@ const Work = () => {
               </a>{' '}
               <a href='https://salindholm-rps-challange.netlify.app/'>
                 <button
-                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -270,7 +270,7 @@ const Work = () => {
               </p>
               <a href='https://github.com/salindholm/cooper_client'>
                 <button
-                  className={` animate-bounce bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
@@ -279,7 +279,7 @@ const Work = () => {
               </a>{' '}
               <a href='https://whssl-cooper-challenge.netlify.app/'>
                 <button
-                  className={` animate-bounceFirst bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
+                  className={`bg-regal-orange px-10 py-3 text-lg uppercase text-white rounded-lg mt-3 hover:bg-grey transform  ${
                     animated ? 'translate-y-0' : styleTranslate
                   } ${transition(3500)}`}
                 >
